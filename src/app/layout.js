@@ -7,10 +7,10 @@ import Footer from '../components/Footer';
 // Nav context provider
 import NavContextProvider from '@/context/NavContext';
 
-const alexBlush = Alex_Brush({ 
+const alexBrush = Alex_Brush({ 
   weight: ['400'],
   subsets: ['latin'],
-  variable: '--font-alexBlush',
+  variable: '--font-alexBrush',
 });
 const montserrat = Montserrat({ 
   weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'],
@@ -27,7 +27,7 @@ export default function RootLayout({ children }) {
   return (
     <NavContextProvider>
       <html lang="en">
-        <body className={`${alexBlush.variable}, ${montserrat.variable} overflow-x-hidden relative`}>
+        <body className={`${alexBrush.variable}, ${montserrat.variable} overflow-x-hidden relative`}>
           <Header/>
           {children}
           <Footer/>
